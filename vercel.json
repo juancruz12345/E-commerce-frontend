@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "https://mi-backend.vercel.app/api/$1"
+      }
+    ]
+  }
+  
