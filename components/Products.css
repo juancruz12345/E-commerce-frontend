@@ -1,0 +1,26 @@
+.central{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .products-list{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product img{
+   
+      width: 100%;
+      height: 30vh;
+  }
+  .input{
+    width: 50%;
+  }

@@ -1,0 +1,33 @@
+
+.home-no-user{
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 0.5px solid rgb(148, 148, 148);
+    width: 50%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .link-no-user{
+    align-self: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 23px;
+    color: white;
+    border-top: 2px solid rgb(74, 240, 129); 
+    border-bottom: 3px solid rgb(44, 153, 80);
+    background-color: rgb(58, 194, 103);
+    padding: 5px;
+    margin: 20px;
+    width: 30%;
+  }
+
+  .link-no-user:hover{
+    background: rgb(68, 224, 120)
+}
+.link-no-user:active{
+    background:rgb(44, 153, 80);
+}
