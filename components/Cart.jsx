@@ -46,7 +46,7 @@ export function Cart({cartProducts, setCartProducts,user}){
           {
             cartProducts?.length>0
             ? <Container hidden={hidden} className="aside">
-
+   
             {
               cartProducts?.length>0 
               ?
