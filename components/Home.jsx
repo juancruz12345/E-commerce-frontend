@@ -12,7 +12,7 @@ export function Home(){
     const {fetchProtectedData, logout} = useToken()
 
     async function FetchData(){
-        const response = await fetch('http://localhost:5000/',{
+        const response = await fetch('https://e-commerce-backend-oluv.onrender.com/',{
             method : 'GET',
             credentials: 'include'
         })

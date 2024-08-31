@@ -25,7 +25,7 @@ export function Login(){
           setValidated(true);
    
    
-        fetch('http://localhost:5000/login',{
+        fetch('https://e-commerce-backend-oluv.onrender.com/login',{
         method: 'POST',
         credentials: 'include',
         headers: {

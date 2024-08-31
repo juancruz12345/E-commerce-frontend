@@ -15,7 +15,7 @@ export function AddProduct(){
     let stock = event.target[5].value;
 
     try {
-        const response = await fetch('http://localhost:5000/products', {
+        const response = await fetch('https://e-commerce-backend-oluv.onrender.com/products', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

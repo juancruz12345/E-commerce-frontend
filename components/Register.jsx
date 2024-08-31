@@ -28,7 +28,7 @@ export function Register(){
       
           setValidated(true);
      
-        fetch('http://localhost:5000/register',{
+        fetch('https://e-commerce-backend-oluv.onrender.com/register',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

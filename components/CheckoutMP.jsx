@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import {initMercadoPago} from '@mercadopago/sdk-react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 
 
@@ -28,7 +28,7 @@ export function CheckoutMP({cartProducts, user}){
   
      try{
 
-       const response = await fetch('http://localhost:5000/create-order',{
+       const response = await fetch('https://e-commerce-backend-oluv.onrender.com/create-order',{
          method: 'POST',
          headers: {
            "Content-Type": "application/json"
