@@ -5,7 +5,6 @@ import {lazy, useEffect } from 'react'
 import {Home} from '../components/Home'
 import { AddProduct } from '../components/AddProduct'
 import { Route, Routes } from 'react-router-dom'
-import { Header } from '../components/Header'
 import { Register } from '../components/Register'
 import { Login } from '../components/Login'
 
@@ -28,7 +27,7 @@ function App() {
       <Route path='/' element={<Home/>}  />
       <Route path='/register' element={<Register/>} />
       <Route path='/login' element={<Login/>} />
-     
+      <Route path='/addproduct' element={<AddProduct/>}  />
     </Routes>
    </div>
   )
