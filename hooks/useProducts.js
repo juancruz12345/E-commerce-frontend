@@ -6,7 +6,7 @@ export function useProducts(){
 
     useEffect(() => {
       const fetchProducts = async () => {
-        const response = await fetch('https://e-commerce-backend-fpiy.onrender.com');
+        const response = await fetch('https://e-commerce-backend-zh4k.onrender.com/products');
         const data = await response.json();
         console.log(data)
         setProducts(data);

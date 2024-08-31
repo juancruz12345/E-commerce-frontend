@@ -28,7 +28,7 @@ export function CheckoutMP({cartProducts, user}){
   
      try{
 
-       const response = await fetch('https://e-commerce-backend-oluv.onrender.com/create-order',{
+       const response = await fetch('https://e-commerce-backend-zh4k.onrender.com/create-order',{
          method: 'POST',
          headers: {
            "Content-Type": "application/json"

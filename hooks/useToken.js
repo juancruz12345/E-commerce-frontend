@@ -10,7 +10,7 @@
       
         const refreshToken = async () => {
           try {
-            const response = await fetch('https://e-commerce-backend-oluv.onrender.com/refresh-token', {
+            const response = await fetch('https://e-commerce-backend-zh4k.onrender.com/refresh-token', {
               method: 'POST',
               credentials: 'include', // to send cookies with the request
             });
@@ -67,7 +67,7 @@
       const fetchProtectedData = async () => {
        
         try {
-          const response = await fetchWithToken('https://e-commerce-backend-oluv.onrender.com/');
+          const response = await fetchWithToken('https://e-commerce-backend-zh4k.onrender.com');
           if (response.ok) {
             const data = await response.json();
             console.log('Protected data:', data);
@@ -82,7 +82,7 @@
       const logout = async() => {
         console.log('logou')
           try {
-             await fetch('https://e-commerce-backend-oluv.onrender.com/logout', {
+             await fetch('https://e-commerce-backend-zh4k.onrender.com/logout', {
               method: 'POST',
               credentials: 'include', // to send cookies with the request
             });

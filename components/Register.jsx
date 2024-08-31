@@ -28,7 +28,7 @@ export function Register(){
       
           setValidated(true);
      
-        fetch('https://e-commerce-backend-oluv.onrender.com/register',{
+        fetch('https://e-commerce-backend-zh4k.onrender.com/register',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
