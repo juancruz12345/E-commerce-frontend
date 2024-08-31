@@ -2,7 +2,7 @@ import { Button, Form } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import './Login.css'
-
+import { redirect } from "react-router-dom";
 
 export function Register(){
 
@@ -40,7 +40,7 @@ export function Register(){
             setHidden(false)
             setSpanTxt('usuario creado, redireccionando al login...')
             setTimeout(()=>{
-                window.location.href = '/login'
+                return redirect("/login");
             },2000)
         }else{
             e.preventDefault()
