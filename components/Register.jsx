@@ -40,7 +40,7 @@ export function Register(){
             setHidden(false)
             setSpanTxt('usuario creado, redireccionando al login...')
             setTimeout(()=>{
-                return redirect("/login");
+                window.location.href = '/login'
             },2000)
         }else{
             e.preventDefault()
