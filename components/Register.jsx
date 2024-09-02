@@ -2,7 +2,8 @@ import { Button, Form } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import './Login.css'
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 export function Register(){
 
@@ -11,7 +12,7 @@ export function Register(){
     const [hidden, setHidden] = useState(true)
     const [spanTxt, setSpanTxt] = useState('')
     const [validated, setValidated] = useState(false);
-
+    const navigate = useNavigate()
    
     const handleSubmit = (e)=>{
         e.preventDefault()
@@ -40,7 +41,8 @@ export function Register(){
             setHidden(false)
             setSpanTxt('usuario creado, redireccionando al login...')
             setTimeout(()=>{
-                window.location.href = '/login'
+                //window.location.href = '/login'
+                navigate('/login')
             },2000)
         }else{
             e.preventDefault()
