@@ -24,10 +24,11 @@ function App() {
    <div>
     
     <Routes>
-      <Route path='/' element={<Home/>}  />
+      
       <Route path='/register' element={<Register/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/addproduct' element={<AddProduct/>}  />
+      <Route exact path='/' element={<Home/>}  />
     </Routes>
    </div>
   )

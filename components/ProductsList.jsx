@@ -88,7 +88,7 @@ export function ProductsList({user}){
             
 
           )
-          : <h1>no produto</h1>
+          : <></>
         }
       </div>
      
