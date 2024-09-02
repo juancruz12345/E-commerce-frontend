@@ -5,17 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "chmod +x node_modules/.bin/vite",
+    
     "build": "npm ci && vite build",
     "start": "vite preview",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "engines": {
-  "node": ">=16.x"
-},
+    "node": ">=16.x"
+  },
   "dependencies": {
     "@mercadopago/sdk-react": "^0.0.19",
+    "@tabler/icons-react": "^3.14.0",
     "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
