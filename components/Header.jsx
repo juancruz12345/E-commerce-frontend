@@ -30,7 +30,7 @@ export function Header({logout}){
         <div >
     <Navbar expand="lg" className="navbar">
         <Container className='navbar-container'>
-        <Navbar.Brand className='navbar-brand'>E-commerce</Navbar.Brand>
+        <Navbar.Brand className='navbar-brand'>Vivero La Jardineta</Navbar.Brand>
         
         <Navbar className='navbar-collapse'>
           <Nav>

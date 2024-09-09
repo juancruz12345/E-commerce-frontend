@@ -50,7 +50,7 @@ export function Cart({cartProducts, setCartProducts,user}){
             {
               cartProducts?.length>0 
               ?
-              <h3>Total: {total}</h3>
+              <h3>Total: ${total}</h3>
               : 
               <div></div>
             }
@@ -66,7 +66,7 @@ export function Cart({cartProducts, setCartProducts,user}){
                 <ListGroup.Item variant="light" className="cart-item" key={i} >
                   
                   <div>Nombre: {e.title}</div>
-                  <div>Precio: {e.price}</div>
+                  <div>Precio: ${e.price}</div>
                   <div>Cantidad: {e.quantity}</div>
                   <Button className="cancel-btn" variant="danger" onClick={()=>{deleteProduct(e)}}><IconShoppingCartX className="cancel-btn-icon" /></Button>
                 </ListGroup.Item>

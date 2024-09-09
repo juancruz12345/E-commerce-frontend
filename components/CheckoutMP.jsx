@@ -3,7 +3,7 @@
 import {initMercadoPago} from '@mercadopago/sdk-react'
 import { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
-
+import './Checkout.css'
 
 export function CheckoutMP({cartProducts, user}){
  
@@ -63,7 +63,7 @@ export function CheckoutMP({cartProducts, user}){
   
     return(
       
-         <Form onSubmit={async(e)=>{e.preventDefault(),setPreference()}}>
+         <Form className='form' onSubmit={async(e)=>{e.preventDefault(),setPreference()}}>
           <Form.Group>
             <Form.Label>Direccion</Form.Label>
             <Form.Control required placeholder='calle falsa 1234' pattern="[a-zA-Z]{2,}\s[0-9]{1,}"  onChange={(e) => setDireccion(e.target.value)}>

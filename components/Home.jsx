@@ -37,9 +37,11 @@ export function Home(){
                 ? 
                 <div>
                     <Header logout={logout}></Header>
-                    <h1>Hola {user.username}</h1>
+                    <h1>Bienvenido {user.username}</h1>
                     <ProductsList user={user}></ProductsList>
-                   
+                    <footer>
+                        <p>Vivero La Jardineta <span>&copy;</span> Todos los derechos reservados</p>
+                    </footer>
                 </div>
 
                 : 
